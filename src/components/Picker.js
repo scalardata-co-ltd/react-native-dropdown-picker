@@ -485,7 +485,8 @@ function Picker({
     /**
      * The label of the selected item / placeholder.
      */
-    const _selectedItemLabel = useMemo(() => getLabel(_placeholder), [getLabel, _placeholder]);
+    
+    const _selectedItemLabel = _value != null ? _value : _placeholder; 
 
     /**
      * The icon of the selected item.
@@ -763,7 +764,7 @@ function Picker({
     const SimpleBodyComponent = useMemo(() => (
         <>
             {SelectedItemIconComponent}
-            <Text style={_labelStyle} {...labelProps}>
+            <Text style={[_labelStyle, {color: _value == null ? '#888' : '#000'}]} {...labelProps}>
                 {_selectedItemLabel}
             </Text>
         </>
@@ -1235,13 +1236,13 @@ function Picker({
         } else {
             isSelected = _value === item[_schema.value]
         }
-
+        
         return (
             <RenderItemComponent
                 rtl={rtl}
                 item={item}
                 label={item[_schema.label]}
-                value={item[_schema.value]}
+                value={value}
                 parent={item[_schema.parent] ?? null}
                 selectable={item[_schema.selectable] ?? null}
                 disabled={item[_schema.disabled] ?? false}

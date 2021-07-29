@@ -22,5 +22,11 @@ export default {
         SEARCH_PLACEHOLDER: 'Arama...',
         SELECTED_ITEMS_COUNT_TEXT: '{count} öğe seçildi',
         NOTHING_TO_SHOW: 'Gösterecek hiçbir şey yok!'
-    }
+    },
+    KR: {
+        PLACEHOLDER: '아이템을 선택하세요',
+        SEARCH_PLACEHOLDER: '검색중입니다...',
+        SELECTED_ITEMS_COUNT_TEXT: '{count} 아이템이 선택되었습니다.',
+        NOTHING_TO_SHOW: '차량을 추가해주세요.'
+    },
 }

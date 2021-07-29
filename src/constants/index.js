@@ -37,7 +37,7 @@ export const DROPDOWN_DIRECTION = {
 export const LANGUAGE = {
     DEFAULT: 'EN',
     FALLBACK: 'EN',
-
+    KOREAN: 'KO',
     ENGLISH: 'EN',
     ARABIC: 'AR',
     FARSI: 'FA',

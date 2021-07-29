@@ -59,7 +59,6 @@ function RenderBadge({
         ...[textStyle].flat(),
         ...[badgeTextStyle].flat()
     ]), [textStyle, badgeTextStyle]);
-
     return (
         <TouchableOpacity style={_badgeStyle} onPress={__onPress}>
             {showBadgeDot && <View style={_badgeDotStyle} />}
