@@ -12,7 +12,7 @@ function ListEmpty({loading, message, ActivityIndicatorComponent, listMessageCon
                 <ActivityIndicatorComponent />
             ) : (
                 <Text style={listMessageTextStyle}>
-                    차량 정보를 추가해 주세요.
+                    선택해 주세요.
                 </Text>
             )}
         </View>
